@@ -39,7 +39,7 @@ const normalTest = (data,options) => {
 
     let theoricStatistic = 0;
     Object.keys(zValues).map(key => {
-        Object.keys(zValues[key]).map(key2 => {
+        Object.keys(zValues[key]).forEach(key2 => {
             if (zValues[key][key2] === zscore) {
                 theoricStatistic = Number(key2) + Number(key);
             }

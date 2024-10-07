@@ -37,12 +37,7 @@ const MainMenu = () => {
             <Link to="stadistic-test/4" className="option">
               <div className="image"></div>
               <div className="h4">Prueba de las series</div>
-            </Link>
-            <Link to="stadistic-test/5" className="option">
-              <div className="image"></div>
-              <div className="h4">Prueba del poker</div>
-            </Link>
-            
+            </Link>        
           </div>
         </div>
       </div>
