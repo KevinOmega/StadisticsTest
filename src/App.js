@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import MainMenu from "./pages/MainMenu";
+import StatisticTest from "./pages/StatisticTest";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<MainMenu />} />
+        <Route path="/stadistic-test/:type" element={<StatisticTest />} />
+        <Route path="*" element={<MainMenu />} />
+      </Routes>
     </div>
+    </Router>
   );
 }
 
