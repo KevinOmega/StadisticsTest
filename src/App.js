@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import MainMenu from "./pages/MainMenu";
 import StatisticTest from "./pages/StatisticTest";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,6 +13,7 @@ function App() {
         <Route path="*" element={<MainMenu />} />
       </Routes>
     </div>
+    <Footer/>
     </Router>
   );
 }
