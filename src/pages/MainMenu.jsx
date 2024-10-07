@@ -16,15 +16,12 @@ const MainMenu = () => {
           </div>
           <div className="test-options">
             <Link to="stadistic-test/1" className="option">
-              <div className="image"></div>
               <div className="h4">Prueba de los promedios</div>
             </Link>
             <Link to="stadistic-test/2" className="option">
-              <div className="image"></div>
               <div className="h4">Prueba de Chi cuadrado</div>
             </Link>
             <Link to="stadistic-test/3" className="option">
-              <div className="image"></div>
               <div className="h4">Prueba de Kolmogorov Smirnov</div>
             </Link>
           </div>
@@ -35,7 +32,6 @@ const MainMenu = () => {
           </div>
           <div className="test-options">
             <Link to="stadistic-test/4" className="option">
-              <div className="image"></div>
               <div className="h4">Prueba de las series</div>
             </Link>        
           </div>
