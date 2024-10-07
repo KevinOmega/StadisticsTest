@@ -55,13 +55,26 @@ const StatisticTest = () => {
         </div>
         <div className="form">
         <div className="row mb-5 g-0" >
-                  <div className="col-3">
+            <div className="col-6">
+              <div className="col-3">
                   <label for="inputPassword6" class="col-form-label">Alpha:</label>
                   </div>
                   <div className="col-8">
                     <input type="number" step={0.01}  className="form-control" value={options.alpha} onChange={(event) => handleChangeOption(event,'alpha')}/>
                   </div>
-                </div>
+            </div>
+            <div className="col-6">
+              <div className="col-3">
+                  <label for="inputPassword6" class="col-form-label">K:</label>
+                  </div>
+                  <div className="col-8">
+                    <input type="number" step={1}  className="form-control" value={options.k} onChange={(event) => handleChangeOption(event,'k')}/>
+                  </div>
+            </div>
+            
+                  
+          </div>
+                
           <div className="row w-100">
           {data.map((item, index) => (
               <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" >              
